@@ -7,7 +7,7 @@ public class Círculo {
     double calcularArea() {
         return Math.PI * Math.pow(radio, 2);
     }
-    double calcularPerimetro() {
+    double calcularPerímetro() {
         return 2 * Math.PI * radio;
     }
 }
