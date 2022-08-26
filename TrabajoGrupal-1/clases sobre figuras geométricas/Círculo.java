@@ -4,10 +4,10 @@ public class Círculo {
     Círculo(int radio) {
         this.radio = radio;
     }
-    double calcular_area() {
+    double CalcularArea() {
         return Math.PI * Math.pow(radio, 2);
     }
-    double calcular_perimetro() {
+    double CalcularPerimetro() {
         return 2 * Math.PI * radio;
     }
 }
