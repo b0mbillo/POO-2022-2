@@ -6,11 +6,11 @@ public class Rectángulo {
         this.altura = altura;
     }
 
-    double calcular_area() {
+    double calcularArea() {
         return base*altura;
     }
 
-    double calcular_perimetro() {
+    double calcularPerimetro() {
         return (2*base)+(2*altura);
     }
 }
