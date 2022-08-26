@@ -1,5 +1,5 @@
 public class PruebaFiguras {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Círculo figura1 = new Círculo(2);
         Rectángulo figura2 = new Rectángulo(1,2);
         Cuadrado figura3 = new Cuadrado(3);
