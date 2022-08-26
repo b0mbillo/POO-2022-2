@@ -5,10 +5,10 @@ public class ejercicio_resuelto_10 {
         double pat, pago=50000;
         Scanner entrada = new Scanner(System.in);
         System.out.print("Digite su número de inscripción: ");
-        int ID = entrada.nextInt();
+        String ID = entrada.nextLine();
 
         System.out.print("Digite su nombre: ");
-        String nom = entrada.next();
+        String nom = entrada.nextLine();
 
         System.out.print("Ingrese su patrimonio: ");
         pat = entrada.nextDouble();
