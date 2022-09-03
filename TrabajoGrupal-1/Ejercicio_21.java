@@ -1,34 +1,24 @@
-package Main;
 import java.util.Scanner;
 public class Ejercicio_21 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 	
 		
-		int Nt, Ter, Cont, Ban;
+		int lad1, lad2, lad3;
+		double perimetro, s,Area;
+		
 		Scanner Sc = new Scanner(System.in);
+		System.out.println("ingrese los lados del triangulo");
+		lad1= Sc.nextInt();
+		lad2= Sc.nextInt();
+		lad3= Sc.nextInt();
 		
-		System.out.println("ingrese el numero de repeticiones: ");
-		Nt = Sc.nextInt();
-		Ter = 17;
-		Cont = 1;
-		Ban = 1;
-		System.out.println("	NT" + "		TER" + "		CONT" + "	BAN");
-		System.out.println("	" +Nt);
-		while(Cont <= Nt) {
-			
-			
-			System.out.println("	"  + "		" + Ter +  "		" +Cont+ "	"+Ban);
-			if(Ban ==  1) {
-				Ter = Ter-2;
-				Ban = 2;
-				}
-			else {
-				Ter = Ter+3;
-				Ban=1;
-			}
-			Cont = Cont + 1;
-		}
+		//Perimetro
+		perimetro = lad1 +lad2 + lad3;
+		s = (perimetro)/2;
+		Area = Math.sqrt(s*((s-lad1)*(s-lad2)*(s-lad3)));
 		
+		System.out.println("el perimetro es: "+perimetro);
+		System.out.println("el semiperimetro es: "+s);
+		System.out.println("el Área es: "+Area);
 	}
-	
 }
