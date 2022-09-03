@@ -1,4 +1,3 @@
-package Main;
 import java.util.Scanner;
 public class Ejercicio_15 {
 
@@ -62,28 +61,3 @@ public class Ejercicio_15 {
 		
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
