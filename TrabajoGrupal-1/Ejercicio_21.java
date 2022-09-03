@@ -1,24 +1,30 @@
 import java.util.Scanner;
-public class Ejercicio_21 {
-
-	public static void main(String[] args) { 	
-		
-		int lad1, lad2, lad3;
-		double perimetro, s,Area;
-		
+public class ejercicio_24 {
+	
+	
+	
+	public static void main(String[] args) {
+		System.out.println("¿Cual esfera es mas pesada?");
 		Scanner Sc = new Scanner(System.in);
-		System.out.println("ingrese los lados del triangulo");
-		lad1= Sc.nextInt();
-		lad2= Sc.nextInt();
-		lad3= Sc.nextInt();
+		double A,B,C;
 		
-		//Perimetro
-		perimetro = lad1 +lad2 + lad3;
-		s = (perimetro)/2;
-		Area = Math.sqrt(s*((s-lad1)*(s-lad2)*(s-lad3)));
+		System.out.println("ingrese es peso de la esfera A: ");
+		A=Sc.nextInt();
+		System.out.println("ingrese es peso de la esfera B: ");
+		B=Sc.nextInt();
+		System.out.println("ingrese es peso de la esfera C: ");
+		C=Sc.nextInt();
 		
-		System.out.println("el perimetro es: "+perimetro);
-		System.out.println("el semiperimetro es: "+s);
-		System.out.println("el Área es: "+Area);
+		if(A == B && A== C) {
+			System.out.println("las 3 esferas son iguales");
+			
+		}
+		else if(A > B && A > C) {
+			System.out.println("A es la esfera mas pesada");}
+		else if(B > A && B > C) {
+			System.out.println("B es la esfera mas pesada");}
+		else if(C > A && C > B) {
+			System.out.println("C es la esfera mas pesada");}
 	}
+
 }
