@@ -49,6 +49,8 @@ public class CRUD {
         while((linea = br.readLine()) != null){
             if (linea.contains("Cedula: " + ced)) {
                 System.out.println(linea);
+                System.out.println("Alguna Tecla para continuar");
+                new Scanner(System.in).nextLine();
                 found = true;
                 break;
             }
