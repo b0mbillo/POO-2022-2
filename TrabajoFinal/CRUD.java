@@ -1,7 +1,8 @@
 import java.io.*;
 
 import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.Path;
+
 import java.util.*;
 
 public class CRUD {
@@ -129,7 +130,7 @@ public class CRUD {
     }
 
     private void mostrar() throws IOException {
-        String content = new String(Files.readAllBytes(Paths.get(fichero)));
+        String content = new String(Files.readAllBytes(Path.of(fichero)));
         String ln = content.strip();
         System.out.println(ln.replaceAll("(?m)^[ \t]*\r?\n", ""));
         System.out.println();
