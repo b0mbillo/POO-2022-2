@@ -1,6 +1,5 @@
 import java.io.IOException;
 
-
 public class Main {
    /*hacer un programa que permita la gestion de datos de contactos(cedula, nombre, apellido) en un archivo de texto*/
     public static void main(String[] args) throws IOException {
