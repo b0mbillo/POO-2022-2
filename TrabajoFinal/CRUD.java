@@ -1,3 +1,5 @@
+package trabajofinal;
+
 import java.io.*;
 
 import java.nio.file.Files;
@@ -73,6 +75,7 @@ public class CRUD {
     }
 
     void eliminar() throws IOException {
+        Scanner scan = new Scanner(System.in);
         String ced = Ced();
         String registro = Registro(ced);
         if(registro == null){
@@ -88,6 +91,7 @@ public class CRUD {
         editartxt(registro,"");
         System.out.println("Contacto Eliminado");
         System.out.println("Alguna Tecla para continuar");
+        scan.nextLine();
     }
 
     void editar() throws IOException {
@@ -132,7 +136,10 @@ public class CRUD {
     private void mostrar() throws IOException {
         String content = new String(Files.readAllBytes(Path.of(fichero)));
         String ln = content.strip();
+        Scanner scan = new Scanner(System.in);
         System.out.println(ln.replaceAll("(?m)^[ \t]*\r?\n", ""));
+        System.out.println("Alguna Tecla para continuar");
+        scan.nextLine();
         System.out.println();
     }
 
